@@ -7,6 +7,8 @@ for (let i = 0; i < 100; i++) {
 }
 
 // You may write your code here!
+
+//Palette Test
 const currentColor = document.querySelector('#current-color')
 
 const colorPalette = document.querySelectorAll('#palette .color')
@@ -14,14 +16,16 @@ const colorPalette = document.querySelectorAll('#palette .color')
 colorPalette.forEach(color => {
   color.addEventListener("click", () => {
     // console.log(color);
-    currentColor.style.background = color.style.background;
+    currentColor.style.backgroundColor = color.style.backgroundColor;
   })
 });
 
+// Cell Test
 const cell = document.querySelectorAll(".cell")
 
 cell.forEach((cell) => {
   cell.addEventListener("click", () => {
-    cell.style.background = currentColor.style.background;
+    cell.style.backgroundColor = currentColor.style.backgroundColor
   })
 });
+
